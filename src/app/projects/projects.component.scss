@@ -4,88 +4,55 @@
   place-items: center;
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
-  grid-row-gap: 30px;
+  grid-row-gap: 20px;
 }
-
-#projectsHeading {
-  margin-top: 30px;
-  grid-area: 1 / 1;
-}
-
 #cardsContainer {
   grid-area: 2 / 1;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: minmax(400px, auto);
   grid-gap: 20px;
-  place-items: center;
+  place-items: right;
 
-  min-height: 100%;
+  min-height: 105%;
   width: 90%;
-  padding-top: 20px;
+  padding-top: 40px;
   padding-bottom: 20px;
 }
 
-.card {
-  min-width: 300px;
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  margin-left: 60px;
+  background-color: transparent;
+  width: 400px;
+  height: absolute;
+  border: 3px solid #f1f1f1;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
   height: 100%;
-  background-color: var(--background);
-  color: var(--offWhite);
-  border: 2px solid var(--light-grey);
-  font-family: "Oxygen Mono", monospace, Arial, Helvetica, sans-serif;
-}
-
-.screenshot {
-  width: 100%;
-  object-fit: cover;
-}
-
-.cardBody {
-  padding: 6px;
-  width: 100%;
-
-  display: grid;
-  grid-template-rows: minmax(72px, auto) 60px auto auto auto;
-  align-items: center;
-  grid-gap: 10px;
-}
-
-.cardTitle {
-  font-size: 1.5rem;
   text-align: center;
-  font-weight: bold;
-  margin: 0px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-front h1 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+.flip-card-front h2 {
+  margin-top: 10px;
+  font-size: 15px;
+  margin-left: 7px;
+  text-align: left;
 }
 
 .buttonWrapper {
+  margin-top: 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-
-.button {
-  margin: 0.5rem;
-  min-width: 87px;
-}
-
-.description {
-  margin: 0px;
-  margin-left: 5px;
-}
-
-.techHeading {
-  margin: 0px;
-  margin-left: 5px;
-}
-
-.skillsList {
-  padding: 0px;
-  margin: 5px;
-  list-style: none;
-  li {
-    border: 1px solid var(--background);
-    padding: 12px;
-    background-color: var(--light-grey);
-    width: 100%;
-  }
 }

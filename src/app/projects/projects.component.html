@@ -1,20 +1,97 @@
 <h1 id="projectsHeading">Projects</h1>
 <div id="cardsContainer">
-  <div *ngFor="let project of projects" class="card">
-    <img class="screenshot" src="{{project.projectImage.src}}" alt="{{project.projectImage.alt}}">
-    <div class="cardBody">
-      <p class="cardTitle">{{project.title}}</p>
-      <div class="buttonWrapper">
-        <a href="{{project.projectPreview.url}}" target="_blank"
-          class="button btn">{{project.projectPreview.description}}</a>
-        <a href="{{project.projectSourceCode.url}}" target="_blank"
-          class="button btn">{{project.projectSourceCode.description}}</a>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img
+          src="../../assets/images/python.jfif"
+          alt="Avatar"
+          style="width: 395px; height: 195px"
+        />
+        <h1>Python Data Comparison Tool</h1>
+        <div class="buttonWrapper">
+          <a
+            href="https://github.com/akeemmckenzie/csvComparisonTool"
+            target="_blank"
+            class="button"
+          >
+            View on GitHub</a
+          >
+        </div>
+        <h2>
+          Tool used to compare JSON,EXCEL AND CSV Files<br />
+          Technologies used:
+        </h2>
+        <dl>
+          <dd>Python (Backend)</dd>
+          <dd>PySimpleGUI(frontend)</dd>
+          <dd>Pandas</dd>
+          <dd>Sqllite</dd>
+        </dl>
       </div>
-      <p class="description">{{project.description}}</p>
-      <p class="techHeading">Technologies Used:</p>
-      <ul class="skillsList">
-        <li *ngFor="let skill of project.skills" class="skill">{{skill}}</li>
-      </ul>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img
+          src="../../assets/images/islandapps.jfif"
+          alt="Avatar"
+          style="width: 395px; height: 195px"
+        />
+        <h1>Island Apps</h1>
+        <div class="buttonWrapper">
+          <a
+            href="https://github.com/akeemmckenzie/csvComparisonTool"
+            target="_blank"
+            class="button"
+          >
+            View on GitHub</a
+          >
+        </div>
+        <h2>
+          Island Apps is a collection of mobile apps I created to modernized
+          user experience in the tourism industry such as beaches and resorts.
+          NB: This repo is not accessible<br />
+          Technologies used:
+        </h2>
+        <dl>
+          <dd>Swift</dd>
+          <dd>Xamarin</dd>
+          <dd>NativeScript</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img
+          src="../../assets/images/unf.png"
+          alt="Avatar"
+          style="width: 395px; height: 195px"
+        />
+        <h1>UNF Projects</h1>
+        <div class="buttonWrapper">
+          <a
+            href="https://github.com/akeemmckenzie/"
+            target="_blank"
+            class="button"
+          >
+            View on GitHub</a
+          >
+        </div>
+        <h2>
+          Throughout my years at UNF, I have completed many projects that
+          demonstrated my knowledge in software development<br />
+          Technologies used:
+        </h2>
+        <dl>
+          <dd>Python</dd>
+          <dd>Java</dd>
+          <dd>C</dd>
+        </dl>
+      </div>
     </div>
   </div>
 </div>
