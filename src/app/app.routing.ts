@@ -6,10 +6,10 @@ import { ThankYouComponent } from './thank-you/thank-you.component';
 import { PreventUnsavedChanges } from './_gaurds/prevent-unsaved-changes.guard';
 
 const routes: Routes = [
-  { path: '/home', component: HomeComponent },
-  { path: '/projects', component: ProjectsComponent },
-  { path: '/contact', component: ContactComponent, canDeactivate: [PreventUnsavedChanges] },
-  { path: '/thankYou', component: ThankYouComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'projects', component: ProjectsComponent },
+  { path: 'contact', component: ContactComponent, canDeactivate: [PreventUnsavedChanges] },
+  { path: 'thankYou', component: ThankYouComponent },
   { path: '**', redirectTo: '/home', pathMatch: 'full' },
 ];
 
