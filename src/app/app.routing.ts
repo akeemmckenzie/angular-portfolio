@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: 'projects', component: ProjectsComponent },
   { path: 'contact', component: ContactComponent, canDeactivate: [PreventUnsavedChanges] },
   { path: 'thankYou', component: ThankYouComponent },
-  { path: '**', redirectTo: '/home', pathMatch: 'full' },
+  { path: '**', redirectTo: 'home', pathMatch: 'full' },
 ];
 
 export const AppRoutes = RouterModule.forChild(routes);
