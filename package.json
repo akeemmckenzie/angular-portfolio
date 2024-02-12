@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build": "ng build --prod",
-    "deploy": "ng build --prod --delete-output-path --base-href=/angular-portfolio/ && npx ngh --dir=dist/angular-portfolio"
+    "deploy": "ng build --prod --delete-output-path --base-href=/angular-portfolio/ && npx ngh --dir=dist/MyPortfolio"
   },
   "private": true,
   "dependencies": {
